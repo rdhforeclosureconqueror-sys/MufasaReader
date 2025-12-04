@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Black Dollar Trust Book Club</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Libraries -->
+  <script src="libs/pdf.min.js"></script>
+  <script src="libs/epub.min.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-left">
+      <div class="logo-circle">BD</div>
+      <div>
+        <h1>Black Dollar Trust Book Club</h1>
+        <p>Pan-African Audiobook Reader • Voice & Legacy</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="reader-section">
+      <h2>📚 Your Books</h2>
+      <p>Upload a <strong>PDF</strong>, <strong>TXT</strong>, or <strong>EPUB</strong> file to read or listen.</p>
+
+      <div class="upload-box">
+        <input type="file" id="bookInput" accept=".pdf,.txt,.epub" />
+        <button id="uploadBtn">Upload Book</button>
+      </div>
+
+      <div id="bookName" class="book-name"></div>
+      <div id="bookPreview" class="book-preview">Upload a book to preview and listen.</div>
+
+      <div class="controls">
+        <select id="voiceSelect"></select>
+        <button id="readBtn">▶ Read</button>
+        <button id="pauseBtn">⏸ Pause</button>
+        <button id="stopBtn">⏹ Stop</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Black Dollar Trust Book Club | Knowledge is the new currency.</p>
+  </footer>
+
+  <script src="reader.js"></script>
+</body>
+</html>
