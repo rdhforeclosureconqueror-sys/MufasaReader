@@ -1,0 +1,111 @@
+/* Pan-African Dark Theme + Gold Rope Accent */
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top, #000, #111);
+  color: #f0f0f0;
+}
+
+header {
+  background: linear-gradient(90deg, #2b2b2b, #000);
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  border-bottom: 4px solid gold;
+  box-shadow: 0 0 12px gold;
+}
+
+.logo-circle {
+  width: 55px;
+  height: 55px;
+  background: gold;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+}
+
+h1 {
+  margin: 0;
+  color: gold;
+}
+
+p {
+  margin: 0;
+  color: #ccc;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+.reader-section {
+  background: rgba(25, 25, 25, 0.9);
+  border: 3px solid gold;
+  border-radius: 10px;
+  padding: 20px;
+  width: 420px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+  animation: shimmer 4s infinite;
+}
+
+@keyframes shimmer {
+  0% { box-shadow: 0 0 10px gold; }
+  50% { box-shadow: 0 0 25px #facc15; }
+  100% { box-shadow: 0 0 10px gold; }
+}
+
+.upload-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+button {
+  background: linear-gradient(90deg, gold, #b8860b);
+  border: none;
+  padding: 10px 14px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+.book-preview {
+  background: #111;
+  padding: 10px;
+  border-radius: 6px;
+  height: 220px;
+  overflow-y: auto;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #e5e5e5;
+  border: 1px solid #333;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  color: #999;
+  border-top: 1px solid #333;
+}
